@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro de Produtos</title>
+  <link rel="stylesheet" href="../style.css" />
+  <script src="../script.js" defer></script>
+</head>
+<body>
+  <h1>Cadastro de Produtos</h1>
+
+  <section id="gerenciar-produtos">
+    <h3>Cadastrar ou Alterar Produto</h3>
+
+    <form id="form-produto">
+      <fieldset>
+        <legend>Dados do Produto</legend>
+
+      
+
+        <label for="fotoProduto">URL da Foto do Produto:</label>
+        <input type="url" id="fotoProduto" name="fotoProduto" placeholder="Ex: http://link.da.foto/produto.jpg"><br>
+        <span class="error-message" id="error-fotoProduto"></span><br>
+        <img id="previewFotoProduto" src="" alt="Preview da Foto"><br><br>
+
+        <label for="nomeProduto">Nome do Produto:</label>
+        <input type="text" id="nomeProduto" name="nomeProduto" required><br>
+        <span class="error-message" id="error-nomeProduto"></span><br>
+
+        <label for="descricaoProduto">Descrição:</label><br>
+        <textarea id="descricaoProduto" name="descricaoProduto" rows="4" cols="50" required></textarea><br>
+        <span class="error-message" id="error-descricaoProduto"></span><br>
+
+        <label for="precoProduto">Preço (R$):</label>
+        <input type="number" id="precoProduto" name="precoProduto" step="0.01" min="0" required><br>
+        <span class="error-message" id="error-precoProduto"></span><br>
+
+        <label for="prazoEntrega">Prazo de Entrega (dias):</label>
+        <input type="number" id="prazoEntrega" name="prazoEntrega" min="1" required><br>
+        <span class="error-message" id="error-prazoEntrega"></span><br>
+
+        <input type="checkbox" id="disponivelVenda" name="disponivelVenda" checked>
+        <label for="disponivelVenda">Disponível para Venda</label><br><br>
+      </fieldset>
+
+      <button type="submit" class="button">Salvar Produto</button>
+      <button type="button" class="button">Limpar Formulário</button>
+    </form>
+
+    <h4>Exemplo - Produto 1:</h4>
+    <img src="/a2-desenvolvimento/images/img-ilustrativa.jpg" alt="Imagem ilustrativa de um carrinho de compras" height="200" width="300">
+    <p>Preço: R$25,00</p>
+    <p>Prazo de entrega: 7 dias úteis</p>
+    <p>Descrição: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, minima odit. Ad illum nam consequuntur culpa non quo, quae explicabo, unde, atque ratione suscipit deleniti harum maxime. Nulla, quisquam deserunt.</p>
+  </section>
+</body>
+</html>
+

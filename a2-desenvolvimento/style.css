@@ -1,0 +1,303 @@
+/* ========================
+   Base
+   ======================== */
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* ========================
+     Cabeçalho
+     ======================== */
+  .header {
+    background-color: #004d40;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+  }
+  
+  .header h1 {
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: #7CA37C;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    background-color: #D3D3D3;
+  }
+  
+  /* ========================
+     Conteúdo principal
+     ======================== */
+  main {
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  .section h2 {
+    color: #004d40;
+    border-bottom: 2px solid #004d40;
+    padding-bottom: 10px;
+    margin-top: 0;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .form {
+    margin-top: 20px;
+  }
+  
+  /* ========================
+     Formulários
+     ======================== */
+  fieldset {
+    border: 1px solid #00796b;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .legend {
+    color: #004d40;
+    font-weight: bold;
+    padding: 0 10px;
+  }
+  
+  .label {
+    display: inline-block;
+    width: 180px;
+    margin-bottom: 8px;
+    vertical-align: top;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="tel"],
+  input[type="number"],
+  input[type="url"],
+  textarea {
+    width: calc(100% - 200px);
+    padding: 8px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    vertical-align: top;
+    resize: vertical;
+  }
+  
+  input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+  }
+  
+  .button,
+  button {
+    background-color: #00796b;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover,
+  button:hover {
+    background-color: #004d40;
+  }
+  
+  .button:focus,
+  button:focus {
+    outline: 2px solid #004d40;
+    outline-offset: 2px;
+  }
+  
+  /* ========================
+     Mensagens de erro e sucesso
+     ======================== */
+  .error-message {
+    color: red;
+    font-size: 0.85em;
+    display: block;
+    margin-top: -5px;
+    margin-left: 180px;
+  }
+  
+  .form-feedback {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .form-feedback.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+  }
+  
+  .form-feedback.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+  }
+  
+  /* ========================
+     Lista de Produtos
+     ======================== */
+  #lista-produtos .produto-item {
+    border: 1px solid #eee;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-radius: 5px;
+  }
+  
+  #lista-produtos .produto-item img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+  }
+  
+  #lista-produtos .produto-item .info {
+    flex-grow: 1;
+  }
+  
+  #lista-produtos .produto-item h4 {
+    margin: 0 0 5px 0;
+    color: #004d40;
+  }
+  
+  #lista-produtos .produto-item p {
+    margin: 0 0 5px 0;
+    font-size: 0.9em;
+  }
+  
+  #lista-produtos .produto-item button {
+    padding: 8px 12px;
+    font-size: 0.9em;
+    background-color: #e0e0e0;
+    color: #333;
+    border: 1px solid #ccc;
+  }
+  
+  #lista-produtos .produto-item button.disponibilidade-btn {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  #lista-produtos .produto-item button.disponibilidade-btn.indisponivel {
+    background-color: #f44336;
+  }
+  
+  #lista-produtos .produto-item button:hover {
+    filter: brightness(0.9);
+  }
+  
+  /* ========================
+     Imagens
+     ======================== */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* ========================
+     Rodapé
+     ======================== */
+  footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #333;
+    color: white;
+    font-size: 0.8em;
+  }
+  
+  /* ========================
+     Responsividade
+     ======================== */
+  @media (max-width: 600px) {
+    .label {
+      width: 100%;
+      display: block;
+      margin-bottom: 5px;
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="tel"],
+    input[type="number"],
+    input[type="url"],
+    textarea {
+      width: 100%;
+    }
+  
+    .error-message {
+      margin-left: 0;
+    }
+  
+    .section,
+    main {
+      padding: 15px;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ul li {
+      margin: 5px 0;
+    }
+  }
+  
