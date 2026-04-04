@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Vendedor</title>
+</head>
+<body>
+    <h1>Portal do Vendedor</h1>
+    <h2>Faca seu cadastro aqui:</h2>
+    <!-- Vendedor informa nome, CPF, endereço, telefone, e-mail, senha e 
+    dados para depósito do pagamento do produto (banco, agência e conta).-->
+
+    <hr> <section id="cadastro-vendedor">
+        <h2>Cadastro de Vendedor</h2>
+        <form action="#" method="post">
+       
+                <legend>Dados do Vendedor</legend>
+                <label for="nomeVendedor">Nome:</label>
+                <input type="text" id="nomeVendedor" name="nomeVendedor" required><br><br>
+
+                <label for="cpfVendedor">CPF:</label>
+                <input type="text" id="cpfVendedor" name="cpfVendedor" required placeholder="Ex: 123.456.789-00"><br><br>
+
+                <label for="enderecoVendedor">Endereço:</label>
+                <input type="text" id="enderecoVendedor" name="enderecoVendedor" required><br><br>
+
+                <label for="telefoneVendedor">Telefone:</label>
+                <input type="tel" id="telefoneVendedor" name="telefoneVendedor" required placeholder="Ex: (XX) XXXXX-XXXX"><br><br>
+
+                <label for="emailVendedor">E-mail:</label>
+                <input type="email" id="emailVendedor" name="emailVendedor" required placeholder="seu.email@hotmail.com"><br><br>
+
+                <label for="senhaVendedor">Senha:</label>
+                <input type="password" id="senhaVendedor" name="senhaVendedor" required><br><br>
+        
+                <legend>Dados Bancários para Depósito</legend>
+                <label for="bancoVendedor">Banco:</label>
+                <input type="text" id="bancoVendedor" name="bancoVendedor" required><br><br>
+
+                <label for="agenciaVendedor">Agência:</label>
+                <input type="text" id="agenciaVendedor" name="agenciaVendedor" required><br><br>
+
+                <label for="contaVendedor">Conta:</label>
+                <input type="text" id="contaVendedor" name="contaVendedor" required><br><br>
+        
+
+            <button type="submit">Cadastrar Vendedor</button>
+        </form>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro Consumidor</title>
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../script.js" defer></script>
+  </head>
+  <body>
+    <h1>Portal do Consumidor</h1>
+
+    <section id="cadastro-consumidor" class="active">
+      <h2>Faça seu cadastro aqui:</h2>
+
+      <form id="form-consumidor">
+        <fieldset>
+          <legend>Dados Pessoais do Consumidor</legend>
+
+          <label for="nomeConsumidor">Nome:(*)</label>
+          <input type="text" id="nomeConsumidor" name="nomeConsumidor" required />
+          <span id="error-nomeConsumidor" class="error-message"></span><br /><br />
+
+          <label for="cpfConsumidor">CPF(*)</label>
+          <input type="text" id="cpfConsumidor" name="cpfConsumidor" required placeholder="Ex: 123.456.789-00" />
+          <span id="error-cpfConsumidor" class="error-message"></span><br /><br />
+
+          <label for="enderecoConsumidor">Endereço(*)</label>
+          <input type="text" id="enderecoConsumidor" name="enderecoConsumidor" required />
+          <span id="error-enderecoConsumidor" class="error-message"></span><br /><br />
+
+          <label for="telefoneConsumidor">Telefone(*)</label>
+          <input type="tel" id="telefoneConsumidor" name="telefoneConsumidor" required placeholder="Ex: (XX) XXXXX-XXXX" />
+          <span id="error-telefoneConsumidor" class="error-message"></span><br /><br />
+
+          <label for="emailConsumidor">E-mail(*)</label>
+          <input type="email" id="emailConsumidor" name="emailConsumidor" required placeholder="seu.email@hotmail.com" />
+          <span id="error-emailConsumidor" class="error-message"></span><br /><br />
+
+          <label for="senhaConsumidor">Senha(*)</label>
+          <input type="password" id="senhaConsumidor" name="senhaConsumidor" required />
+          <span id="error-senhaConsumidor" class="error-message"></span><br /><br />
+
+          <button type="submit">Cadastrar Consumidor</button>
+        </fieldset>
+      </form>
+    </section>
+  </body>
+</html>
